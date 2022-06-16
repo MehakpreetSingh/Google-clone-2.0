@@ -17,7 +17,7 @@ const Video = (props) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
   return (
-    <div className='lg:w-2/3 w-full ml-5 md:ml-20'>
+    <div className='lg:w-2/3 ml-5 md:ml-20'>
       
       {loading && <Spinner/>}
        {
