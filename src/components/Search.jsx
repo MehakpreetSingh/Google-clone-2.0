@@ -17,13 +17,13 @@ const Search = (props) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
   return (
-    <div className='lg:w-2/3 w-5/6 ml-5 md:ml-20'>
+    <div className='lg:w-2/3 w-full ml-5 md:ml-20'>
       {/* {!loading && <>
         <h1 className='m-2 text-[#8a8a8a] '>About {infoObject.searchInformation.formattedTotalResults} results ({infoObject.searchInformation.formattedSearchTime}) </h1>
       </>} */}
       {loading && <Spinner/>}
        {
-        !loading && ( infoObject.results.map((element , index) => {
+        !loading && ( infoObject.results?.map((element , index) => {
         return (
         <div className=''  key={index}>
         <LinkCard title={element.title} snippet={element.description?element.description : ""} link={element.link}/>
