@@ -18,9 +18,7 @@ const Video = (props) => {
   },[])
   return (
     <div className='lg:w-2/3 w-full ml-5 md:ml-20'>
-      {/* {!loading && <>
-        <h1 className='m-2 text-[#8a8a8a] '>About {infoObject.searchInformation.formattedTotalResults} results ({infoObject.searchInformation.formattedSearchTime}) </h1>
-      </>} */}
+      
       {loading && <Spinner/>}
        {
         !loading && ( infoObject.results?.map((element , index) => {
