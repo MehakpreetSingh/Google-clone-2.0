@@ -8,7 +8,7 @@ const LinkCard = (props) => {
       <div className=" flex items-center justify-between space-x-1 p-2 h-full">
         <div className="link-header w-2/3">
           <a className=" " href={`${props.link}`} >
-            <p className="text-sm text-[#8a8a8a]">{props.link}</p>
+            <p className="w-full text-sm text-[#8a8a8a]">{props.link}</p>
             <h1 className="inline-block text-lg text-blue-500 border-transparent border-b-[1px] hover:border-b-[1px] hover:border-blue-500">{props.title}</h1>
           </a>
           <p className=" w-full text-sm text-[#8a8a8a]">{props.snippet}</p>
