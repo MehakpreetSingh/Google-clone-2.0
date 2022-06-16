@@ -11,7 +11,7 @@ const LinkCard = (props) => {
             <p className="text-sm text-[#8a8a8a]">{props.link}</p>
             <h1 className="inline-block text-lg text-blue-500 border-transparent border-b-[1px] hover:border-b-[1px] hover:border-blue-500">{props.title}</h1>
           </a>
-          <p className="text-sm text-[#8a8a8a]">{props.snippet}</p>
+          <p className=" w-full text-sm text-[#8a8a8a]">{props.snippet}</p>
         </div>
         {/* <div className='h-full'>
           {props.pagemap && props.pagemap.cse_thumbnail && props.pagemap.cse_thumbnail[0].src && (<img className="rounded-md h-full w-[170px]" src={props.pagemap.cse_thumbnail[0].src} alt="" />)}
